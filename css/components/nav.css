@@ -4,8 +4,8 @@
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   position: fixed;
   bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
+  width: 100%;   
+  box-sizing: border-box;    /*  box size를 바꾸지 마라~ 그 box에 padding이 있든 뭐든간에 */
 }
 
 .nav__list {
@@ -15,4 +15,33 @@
 
 .nav__link {
   color: var(--green);
+  position: relative;
+}
+
+
+.nav__notice {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: indianred;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__dot {
+  width: 5px;
+  height: 5px;
+  background-color: indianred;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
 }
