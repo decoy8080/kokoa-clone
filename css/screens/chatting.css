@@ -1,6 +1,6 @@
 #chatting-screen {
   background-color: #abc1d1;
-  height: 300vh;
+  height: 100vh;
 }
 
 #chatting-screen .status-bar,
@@ -88,4 +88,67 @@
 
 .message-row__own .message__info {
   flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+
+.reply .reply__column:last-child { 
+  width: 90%;
+  position: relative;
+  right: 18px;
+}
+
+
+.reply input {
+  padding: 13px;
+  width: 100%;
+  border: var(--border-main);
+  border-radius: 20px;
+}
+
+.reply i {
+  opacity: 0.7;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -20px;
+  top: 6px;
+}
+
+.reply__column:last-child > i {
+  right: 20px;
+  top: 13px;
+}
+
+.reply__column button {
+  background-color: #514fca;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply__column button i {
+  opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
 }
